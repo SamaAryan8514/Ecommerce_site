@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Basics</title>
+</head>
+<body>
+    
+    <div class="js-container"></div>
+    <script src="https://unpkg.com/supersimpledev/dayjs.js"></script>
+    
+     <script src="https://unpkg.com/supersimpledev/react.js"></script>
+    <script src="https://unpkg.com/supersimpledev/react-dom.js"></script>
+    <script src="https://unpkg.com/supersimpledev/babel.js"></script>
+    <script src="react-basic.js"></script>
+    <script type="text/babel">
+        const div = <p>Current Time: {dayjs().format('HH:mm:ss')}</p>;
+            
+                // <p>Today is <u> {curDate}</u></p>>
+            // <div>
+            //     <p>Current Time: <u> {curTime}</u></p>
+            // </div>
+        //     <div>
+        //         <button>Good Job!</button>
+        //         <p>My name is Aryan</p>
+                
+        //         <p>Cotton socks</p>
+        //         <p>Price: ${10}</p>
+        //         <button>Add to cart</button>
+        //         <p>Products bought 1 socks<span>for 10$</span> and 2 T-shirts<span> for 8$</span> so now price will be</p>
+        //         <br />
+        //         <p>Product Cost: <u>${productCost}</u></p>
+        //         <p>Shipping Cost: <u>${shippingCost}</u></p>
+        //         <p>Total Cost: <u>${totalCost}</u></p>
+        //         <button>Place your order</button>
+        //    </div>
+        const container = document.querySelector(".js-container");
+        //  ReactDOM.createRoot(container).render(div);
+        const root = ReactDOM.createRoot(container);
+        root.render(div);
+        setInterval(()=>{
+          const div = <p>Current Time: {dayjs().format('HH:mm:ss')}</p>
+          root.render(div);
+        },1000);
+    </script>
+    
+</body>
+</html>

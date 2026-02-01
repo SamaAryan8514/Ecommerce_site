@@ -1,0 +1,21 @@
+.app-container {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.welcome-message {
+  color: rgb(120, 120, 120);
+  margin-top: 335px;
+}
+
+.image {
+  height: 45px;
+  border-radius: 45px;
+  object-fit: cover;
+}

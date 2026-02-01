@@ -1,0 +1,291 @@
+React is an external library,i.e,:-
+-> it is a bunch of code that is outside our computer.
+-> we can load this code on our website, and use it.
+
+so basically, React --> is an external library, that helps us create website easier.
+
+(*) ReactDOM.createRoot() --> it is used to set up React.
+
+(*)render --> feature of React, which is used to display something.
+syntax of using render with React :-  ReactDOM.createRoot(<html element>).render("/statement to be displayed");
+
+so, React "helps us create website easier" by promising following things,:-
+
+(1) Creating a website wiht React "feels natural"
+(2) it is easier to recognize errors, if we are creating and manipulating HTML elements with the help of "React".
+(3) we can insert values inside "JSX" elements without using the concept of "string interpolation" by using "babel" external
+library of React.
+
+--> in JSX, nearly every HTML element needs opening as well as closing tags.
+--> JSX is more strict than normal HTML.
+
+(*) Components in React 
+--> Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML.
+--> They are basically a piece of the website.
+--> We can create our own HTML elements using Components
+--> Basically, we use two types of Components, i.e, Class components and Function components.
+**--> components makes a particular section of code reusable, by providing it with a standard function component name, i.e, the 
+piece (or component) can be used for several no. of times by just calling the self-closing component of the functional component.
+
+(*) Usecase of Components :- Basically, while building a website, it is easier to implement the functioning of the website
+and to improve the flexibility of the website by splitting the website into smaller pieces(Components), i.e, by splitting
+the website into smaller pieces(or components), we can work on a small piece of the website at a time.
+
+--> So, basically, the pieces or parts in which the website has been splitted into, are referred to as --> "components".
+
+(*) Self-closing element
+--> In React, self-closing elements are tags that do not require a separate closing tag and are written with a forward slash before the closing angle bracket, such as "<img />" or "<input />".
+
+(*) Fragments in React
+--> Fragments actually allow us to group elements together, without creating any extra "<div></div>"(which ultimately kind 
+ of increases the visibility complexity in the UI of the structure of the HTML in the console section).
+--> This makes it  ideal for returning multiple elements from a component's render method without introducing unnecessary 
+  wrapper elements like <div>. 
+--> It is represented as --> "<></>
+
+(*) Props in React
+--> generally, Props or Properties is a functionality of React, which allow us to access the component's attributes, as it is used
+in a functional component to access its defined attributes.
+--> Props make components(that are used in React) reusable, which ultimately increases the flexibility factor in creating websites.
+--> Props are generally of --> "object type"(i.e, datatype of Props--> obejcts).
+
+(*) Destructuring in React
+--> in React, we can also extract the properties out of the objects(Props), while using them in Functional components to make the 
+code more readable, i.e, Destructuring the object(Props) by extracting the properties out of it, this process is referred to as 
+Destructuring.
+--> so basically, Destructuring in React is a JavaScript feature introduced in ES6 that allows developers to extract specific values from objects or arrays and assign them to new variables, making code more concise and readable.
+
+(*)Guard operator("&&")
+--> for ex:-
+const result = val1 && val2;
+here, Guard operator(&&) works in a way, i.e,--> if val1 is True, then the result will automatically be val2.
+so, basically Guard operator works like an if statement.
+--> working of Guard operator is more proficient in JSX(Java script with XML).
+
+-->So basically, in React, we can save a data or information using arrays and objects.
+
+-->In React, any HTML can be generated using ".map()" and key properties, where ".map()" creates a mapping of a certain set of
+values into the new values having a unique "Key".
+
+-->any random unique key or id can be generated using --> "crypto.RandomUUID()" in built function of JS.
+
+--> "onClick" and "onChange" are prominent and essential event handlers.
+
+(*)State
+--> React components has a built-in state object, which is the Component's own data that can change and cause the UI to re-render.
+--> When a state changes, React re-renders the component automatically.
+--> Each component can mainatins its own state.
+--> State is used for intertactive or dynamic content.
+--> It is basically a data that changes over time, and which is connected to the HTML.
+
+--> An array which declares a state in React has :-  (1) arr[0](first element)--> representing the current value present during
+rendering of the UI and (2) arr[1](second element)--> representing the updater function(which is responsible for the updates to
+the current value of state).
+
+(*)Updater function
+--> It is a function which updates the state and eventually updates the HTML as well(as it uses "state" which connects it to the 
+HTML).
+
+(*) Lifting the state up --> it means to share the state between the components of a HTML(webpage), by interaction procedure via
+the parent(root) HTML element.
+
+(*) Array Destructuring
+--> It is simply a JS feature used to extract values from arrays into separate variables.
+--> React commonly uses array Destructuring with hooks like useState().
+
+--> Array Destructuring allows you to pull out elements from an array and store them in distinct variables using a clean and 
+readable syntax.
+
+(*) "map()" function in JS
+---> It is a very useful function in JS, which allows to run a function on each item in the array, returning a new array as the result.
+--> in React, "map()" is generally used to generate lists.
+---> it is a method which basically iterates over each element of an array, applies a function to it, and returns a new array, 
+    commonly used in React to render lists of components without modifying the original array.
+
+(*) Spread operator("...")
+--> The JS spread operator allows to quickly copy all or part of an existing array or object into another array or object
+--> The spread operator is often used in combination with destructuring, as well as with objects too.
+--> In React, it is basically used to expand elements of an array, object, or iterable into individual elements, commonly used to
+    copy, merge, or updat state immutably without modifying the original data.
+
+(*) More on the concept of Lifting the State up
+--> Basically, Lifting state up is a React concept where state is moved from a child component to their nearest common parent,
+so that multiple child components can share and synchronize the same data through props.
+
+(*) onChange event handler
+--> React onChange is an event handler that triggers when there is any change in the input field.
+--> This event captures the changes in an input field and executes the handler function. It is fired when the input field is modified
+    and loses focus.
+--> it is one of the "form events" that updates when the input field is modified.
+*********---------***************
+**Note
+--> Generally, event handlers in React uses --> "Camel case convention" generally(for ex. --> onChange,onClick,etc).
+**********---------***************
+
+(*)flex-direction(a CSS prop) defaultly aligns the contents inside a flexbox in a horizontal or row manner, so if, we want to 
+align the contnets of the flexbox in a vertical or column manner, then we have to assign, :
+
+--> flex-direction : column(in CSS, after display has already been set or assinged to --> flex,i.e, display : flex).
+
+(*)Hooks
+--> These are the special functions that let us use or insert React features(state,lifecycle,etc.) in functional components.
+---> Common Hooks :
+(1) useState
+(2) useEffect
+(3) useContext
+(4) useRef
+
+(*)useEffect hook
+--> it runs some code(defined or written inside it) after a particular component is created or updated.
+--> it is a React hook used to perform side effects such as data fetching, subscriptions, or DOM updates in functional components.
+--> it runs after the components renders(i.e, created or updated), ensuring the UI is updated before the effect executes.
+--> it consists of a dependency array, which controls when the effect runs(on every render, once, or when specific values change).
+--> it can return a cleanup function to remove side effects like event listeners or timers when the component unmounts or updates.
+
+--> providing '[]' as dependency array tells implies  useEffect to only run once.
+
+(*)useRef hook
+---> it basically saves an HTML element from the particular component. 
+---> it is a React hook used to create a mutable reference that persists across component re-renders.
+---> it is commonly used to directly access and manipulate DOM elements without causing re-rendering.
+---> Updating a "useRef" value does not trigger a re-render, unlike state updates.
+---> it is also used to store values(like timers or previous state) that need to persist between renders. 
+
+*********************Terminal commands overview********************************
+--> Some of the important terminal commands :
+(1) mkdir <directory or folder name to be written here> --> used to create new directory or folder
+
+(2) pwd ---> Used to print the working or current directory or folder
+
+(3) ls ----> It lists everything present inside the working directory or folder.
+
+(4) cd <directory or folder name to be written here> --> this command is used to change the working or current directory to
+the directory which is specified alongside "cd"(i.e, abbreviation of cd --> current directory).
+
+(5) .. => This represents outer folder, i.e, if we have entered an inner folder or a subset folder of outer or superset folder,
+and we have to exit form the inner folder all the way to the outer folder, then we can simply use the command, :-
+
+"cd .." --> This command lets us exit an inner folder, all the way to a outer folder.
+
+****************************************Note***************************************************
+--> all the above commands are implemented using the terminal of VS code.
+
+************************************************************************************************
+
+(*)Node js overview
+--> "node" command in vs code terminal lets us run JavaScript code outside of a browser.
+
+for ex, if we have to run any "JS" file inside terminal only, then we can use 'node' as follows:-
+
+--> node <JS file name>.js   (here, ".js" is implied because, a particular JS file will have '.js' as its extension only), thus,
+here "node" helped us run the code outside of the browser, i.e, in the terminal itself.
+
+(*)Package
+--> A package is a reusable piece of code(library or tool) published to npm that can be installed and used in a JS or React project
+to add specific functionality without writing everything from scratch.
+--> It is a type of external library.
+--> It is simply a collection of reusable JS code that can be installed and used in a project using npm.
+**************************************************************************************
+
+--> "npm" is node package manager which lets us install external libraries(or packages) into our project.
+
+(*) To install a particular package(or external library) using npm, we proceed as follows :-
+
+--> npm install <package name> (This command executes in VS code terminal).
+
+--> "NPM"(webserver) contains millions of packages that we can download and use as per our use cases.
+
+*********Note****************************************************
+---> Some packages also adds a command to our command line,i.e,:-
+
+--> The package "create-vite" also adds a command --> "create-vite" to our command line.
+--> This "create-vite" command which has been added to our command line, helps us set up a new React project.
+
+--> To use the "create-vite" command, we have to follow several steps,i.e,:-
+
+(1) firstly, we have to install the "create-vite" package using --> npm install create-vite command in the terminal.
+(2) then, we have to run "create-vite" command in the command line.
+
+--> We also have a shortcut, to cut down this two way process as follows,:-
+
+-> we can use "npx" to execute the above two steps, required to install "create-vite" package(external library), in a single step,
+at once as follows,:- 
+
+---> "npx create-vite@<version of vite to be installed>", (here, 'x' stands for execute, which implies to execute both the installing
+and running steps at once).
+
+(*)Various components of React :-
+
+(*)node_modules
+--> node_modules is a folder that stores all the npm packages(dependencies) installed for a project, which are required for the
+application to run.
+--> It is a directory that contains all installed npm packages used by a project.
+--> This folder is auto-generated, can be very large, and is usually not shared or uploaded.
+
+************Note****************************
+--> "npm run dev" command lets us run our website(i.e, vite server).
+********************************************
+(*)Public folder
+--> it contains files that should be available to the public.
+--> we can access these using a URL.
+
+(*)src(Source folder)
+--> It is the folder that conatins the main source code of the React application, including components, JS files, styles, and logic
+of the app.
+--> It is simply a directory, where the main React application code is written and maintained.
+--> it is the folder which consist of major work content and consumes most of the working time while building a React app or site.
+
+(*)ESLint tool in JS
+--> It is a tool that analyzes JS and React code to find and repot errors, bugs, and code style issues, helping developers write
+clean and consistent code.
+--> It is simply a tool to identify and fix problems in JS and React code.
+--> It improves code quality by investigating and fixing errors in code.
+
+(**)Overview of Vite
+--> It is a tool that we use to set up our React project.
+--> It also helps us "build" the website.
+--> It also helps us creates a server.(i.e, a server puts our website at a URL).
+--> (**)Vite lets us import any type of file(**).
+
+(*)package.json
+--> It is a configuration file that stores important information about a project, such as project details, scripts, and the list of
+required npm packages(dependencies).
+--> It kind of tells npm, what the project needs and how it should run.
+
+(*)package-lock.json
+--> It is an automatically generated file that records the exact versions of installed npm packages to ensure the project runs
+the same way on every system.
+--> It kind of locks the exact dependency versions for consistency.
+
+
+(*)So basically, package.json defines what dependencies are needed, while package-lock.json locks exact versions of those
+dependencies.
+
+(*)vite.config.js
+--> It is a configuration file used by Vite to define project settings such as plugins, server options, build configurations,
+and path aliases.
+--> It is a file used to customize and control how a Vite project is built and run.
+
+(*)<StrictMode></StrictMode>
+--> It is a  HTML tag in React, which gives us some additional checks and warnings when developing our app.
+--> It is a vital component, that is required during building of website using React. 
+
+(*)JavaScript Modules 
+-->Js modules are reusable files of code that allow functionality to be divided into separate parts and shared between 
+files using "import" and "export" keywords.
+-->They are simply a way to organize JS code into reusable files using "import" and "export".
+-->They help keep the code organized, maintainable, and easy to reuse.
+
+(*)Named export
+-->A named export allows a file to export multiple values by name, and they must be imported using the same names inside curly 
+braces.
+-->So basically, it is used to export multiple values using their specific names.
+--> it uses "curly braces" to enclose names, in order to export them.
+
+(*)Default export
+-->A default export allows a file to export a single main value,and it can be imported "using any name".
+--> It "Exports one main value" from a file.
+
+
+(**)So basically, "Named export" requires exact names and "{}"(curly braces), while "default export" allows any import name and 
+exports only one value.
