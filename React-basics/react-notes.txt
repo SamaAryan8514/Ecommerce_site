@@ -289,3 +289,33 @@ braces.
 
 (**)So basically, "Named export" requires exact names and "{}"(curly braces), while "default export" allows any import name and 
 exports only one value.
+
+(**)Routing in React
+--> Routing in react lets us create multiple pages uisng 1 HTML file, which helps us reuse our HTML code.
+--> The process of navigating between different components based on the URL without reloading the page.
+--> Routing in React is used to navigate between different pages or views in a single-page application (SPA).
+--> React uses client-side routing, meaning the page does not reload when navigating.
+--> Routing is commonly implemented using React Router.
+--> Routes are defined using the <Route> component.
+--> The <BrowserRouter> component wraps the application to enable routing.
+--> Each route maps a URL path to a specific component.
+--> The <Link> component is used for navigation instead of <a> tags.
+
+(*)<Route> component in React
+--> The <Route> component is used to define a mapping between a URL path and the React component that should be rendered when that  path is visited.
+--> It is used inside "<Routes>" component to handle the navigation between various web pages.
+
+(*)<Routes> component
+--> The "<Routes>" component is used to group multiple <Route> components and ensures that only the matching route is rendered.
+--> It is a kind of container for all "Route" definitions.
+
+(*)<BrowserRouter> component
+--> The <BrowserRouter> component wraps the entire React application and enables routing using the browser’s URL and history API.
+--> It basically provides Routing capability to the React app.
+
+(*)<Link> component
+--> The <Link> component is used to navigate between routes without reloading the page.
+--> They are basically placed, in place of "<a>" tag  to provide smooth and flexible navigation, without reloading the page,
+    using JS to do so.
+--> Generally, "<Link>" uses an attribute "to" in place of "href" to carry its workflow properly.
+
