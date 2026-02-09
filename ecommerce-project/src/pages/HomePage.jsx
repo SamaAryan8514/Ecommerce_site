@@ -3,19 +3,16 @@ import { useEffect, useState } from 'react';
 import { Header } from '../components/Header';
 import './HomePage.css';
 
-export function HomePage() {
+export function HomePage({ cartItems }) {
     const [products, setProducts] = useState([]);
-    const [cartItems, setCartItems] = useState([]);
+    
 
     useEffect(() => {
         axios.get('/api/products')
             .then((response) => {
                 setProducts(response.data);
             });
-        axios.get('/api/cart-items')
-            .then((response) => {
-                setCartItems(response.data);
-            });
+        
 
 
     }, []);
