@@ -6,7 +6,7 @@ export function OrdersPage() {
         <>
             <title>Orders</title>
 
-            <Header />
+            <Header  />
 
 
             <div className="orders-page">
